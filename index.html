@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garuvia Flytech - Smart IT & Digital Solutions</title>
+    <meta name="description" content="Empowering businesses with smart IT and digital solutions for growth and transformation." />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: '#050505',
+              accent: '#D3AF37',
+              soft: '#f5f5f5'
+            },
+            boxShadow: {
+              glow: '0 0 25px rgba(211,175,55,0.35)',
+              'card': '0 4px 20px rgba(0,0,0,0.4)'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-dark text-soft min-h-screen">
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-dark/90 backdrop-blur">
+      <nav class="mx-auto flex max-w-7xl items-center justify-center px-4 py-4 lg:px-8 relative">
+        <a href="#home" class="flex items-center gap-3 absolute left-4 lg:left-8">
+          <!-- <img src="css/logo.svg" alt="GFT Logo" class="h-10 w-10"> -->
+          <span class="text-2xl font-bold tracking-wide text-white hidden sm:inline">Garuvia<span class="text-accent">Flytech</span></span>
+        </a>
+
+        <div class="hidden items-center gap-8 lg:flex">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+
+          <div class="dropdown group">
+            <button class="nav-link">Services</button>
+            <div class="dropdown-menu">
+              <div class="dropdown-column">
+                <h4>SEO Services</h4>
+                <a href="#seo">Local SEO</a>
+                <a href="#seo">E-commerce SEO</a>
+                <a href="#seo">Enterprise SEO</a>
+                <a href="#seo">SaaS SEO</a>
+                <a href="#seo">Healthcare SEO</a>
+                <a href="#seo">AI SEO Solutions</a>
+              </div>
+
+              <div class="dropdown-column">
+                <h4>Digital Marketing</h4>
+                <a href="#marketing">Performance Marketing</a>
+                <a href="#marketing">B2B Lead Generation</a>
+                <a href="#marketing">Social Media Marketing</a>
+                <a href="#marketing">Google Ads Management</a>
+                <a href="#marketing">Meta Ads Management</a>
+                <a href="#marketing">PPC Services</a>
+              </div>
+
+              <div class="dropdown-column">
+                <h4>Web Development</h4>
+                <a href="#web">Custom Websites</a>
+                <a href="#web">WordPress Development</a>
+                <a href="#web">Shopify Development</a>
+                <a href="#web">Corporate Websites</a>
+                <a href="#web">Landing Pages</a>
+                <a href="#web">Website Redesign</a>
+              </div>
+
+              <div class="dropdown-column">
+                <h4>App Development</h4>
+                <a href="#app">iOS Apps</a>
+                <a href="#app">Flutter Development</a>
+                <a href="#app">React Native Apps</a>
+                <a href="#app">Enterprise Apps</a>
+                <a href="#app">App Maintenance</a>
+                <a href="#app">Web Apps</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#travel" class="nav-link">Travel Services</a>
+          <a href="#blog" class="nav-link">Blogs</a>
+          <a href="#contact" class="nav-link">Contact Us</a>
+        </div>
+
+        <button id="menuBtn" class="rounded border border-accent px-4 py-2 text-sm text-accent lg:hidden absolute right-4">
+          Menu
+        </button>
+      </nav>
+
+      <div id="mobileMenu" class="hidden border-t border-white/10 bg-dark px-4 py-4 lg:hidden">
+        <div class="flex flex-col gap-3">
+          <a href="#home" class="text-white/80 hover:text-accent">Home</a>
+          <a href="#about" class="text-white/80 hover:text-accent">About</a>
+          <a href="#services" class="text-white/80 hover:text-accent">Services</a>
+          <a href="#travel" class="text-white/80 hover:text-accent">Travel Services</a>
+          <a href="#blog" class="text-white/80 hover:text-accent">Blogs</a>
+          <a href="#contact" class="text-white/80 hover:text-accent">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- HERO SECTION -->
+      <section class="relative overflow-hidden py-20 lg:py-28">
+        <div class="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent"></div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div class="relative z-10 flex flex-col justify-center">
+              <p class="mb-4 inline-flex w-fit rounded-full border border-accent/40 bg-accent/10 px-4 py-2 text-sm font-semibold text-accent">
+                ✨ Smart IT Solutions
+              </p>
+              <h1 class="text-5xl font-bold leading-tight text-white sm:text-6xl lg:text-7xl">
+                Empowering Businesses with <span class="text-accent">Smart IT</span> & Digital Solutions
+              </h1>
+              <p class="mt-6 max-w-2xl text-lg leading-relaxed text-white/80">
+                Hum apke business ko digital transformation ke through growth ke raste par le jaate hain. SEO se lekar app development tak, sab kuch ek hi platform se.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#contact" class="rounded-lg bg-accent px-8 py-4 font-semibold text-white shadow-glow transition hover:shadow-2xl hover:scale-105">
+                  Start Your Journey
+                </a>
+                <a href="#about" class="rounded-lg border-2 border-accent/60 px-8 py-4 font-semibold text-white transition hover:border-accent hover:bg-accent/10">
+                  Learn More
+                </a>
+              </div>
+            </div>
+
+            <div class="relative z-10">
+              <div class="absolute -inset-4 rounded-3xl bg-gradient-to-br from-accent/30 to-transparent blur-2xl opacity-60"></div>
+              <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-accent/10 p-8 shadow-card">
+                <div class="rounded-2xl bg-gradient-to-br from-accent/40 to-black/60 p-8 text-center">
+                  <p class="text-6xl font-bold text-white">300+</p>
+                  <p class="mt-2 text-white/80">Projects Delivered</p>
+                  <div class="mt-6 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
+                    <div>
+                      <p class="text-2xl font-bold text-accent">98%</p>
+                      <p class="text-xs text-white/60">Satisfaction</p>
+                    </div>
+                    <div>
+                      <p class="text-2xl font-bold text-accent">50+</p>
+                      <p class="text-xs text-white/60">Team Members</p>
+                    </div>
+                    <div>
+                      <p class="text-2xl font-bold text-accent">7+</p>
+                      <p class="text-xs text-white/60">Years Active</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <p class="mb-4 text-accent font-semibold">About Garuda Technologies</p>
+              <h2 class="text-4xl font-bold text-white sm:text-5xl">
+                Your Trusted Digital <span class="text-accent">Partner</span> for Growth
+              </h2>
+              <p class="mt-6 text-lg leading-relaxed text-white/70">
+                Garuda Technologies ek leading IT company hai jo businesses ko complete digital transformation solutions provide karta hai. Hum SEO, digital marketing, web development aur app development mein experts hain.
+              </p>
+              <div class="mt-8 space-y-4">
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/20 text-accent">
+                      ✓
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Strategic Planning</h3>
+                    <p class="text-white/70">Data-driven strategies for business growth</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/20 text-accent">
+                      ✓
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">Expert Team</h3>
+                    <p class="text-white/70">50+ skilled professionals</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex-shrink-0">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/20 text-accent">
+                      ✓
+                    </div>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold text-white">24/7 Support</h3>
+                    <p class="text-white/70">Always available for your needs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-accent/20 to-white/5 p-8">
+              <div class="space-y-6">
+                <div>
+                  <p class="text-sm uppercase tracking-wider text-accent">Founded</p>
+                  <p class="mt-2 text-2xl font-bold text-white">2017</p>
+                </div>
+                <div class="border-t border-white/10 pt-6">
+                  <p class="text-sm uppercase tracking-wider text-accent">Headquarters</p>
+                  <p class="mt-2 text-lg font-semibold text-white">India</p>
+                </div>
+                <div class="border-t border-white/10 pt-6">
+                  <p class="text-sm uppercase tracking-wider text-accent">Industries Served</p>
+                  <p class="mt-2 text-white/80">E-commerce, SaaS, Healthcare, Travel, Enterprise</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section id="services" class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Our Expertise</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              Comprehensive <span class="text-accent">IT & Digital Services</span>
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-white/70">
+              Complete solutions for your digital transformation journey
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="group rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 transition hover:border-accent/60 hover:shadow-card">
+              <div class="mb-4 h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-2xl">
+                🔍
+              </div>
+              <h3 class="text-xl font-bold text-white">SEO Services</h3>
+              <p class="mt-3 text-white/70">Local, E-commerce, Enterprise, SaaS, Healthcare SEO aur AI-powered solutions</p>
+              <a href="#services" class="mt-4 inline-block text-accent hover:text-accent transition">
+                Explore →
+              </a>
+            </div>
+
+            <div class="group rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 transition hover:border-accent/60 hover:shadow-card">
+              <div class="mb-4 h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-2xl">
+                📊
+              </div>
+              <h3 class="text-xl font-bold text-white">Digital Marketing</h3>
+              <p class="mt-3 text-white/70">Performance marketing, Google Ads, Meta Ads, Social Media Management</p>
+              <a href="#services" class="mt-4 inline-block text-accent hover:text-accent transition">
+                Explore →
+              </a>
+            </div>
+
+            <div class="group rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 transition hover:border-accent/60 hover:shadow-card">
+              <div class="mb-4 h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-2xl">
+                💻
+              </div>
+              <h3 class="text-xl font-bold text-white">Web Development</h3>
+              <p class="mt-3 text-white/70">Custom websites, WordPress, Shopify, Corporate sites, Landing pages</p>
+              <a href="#services" class="mt-4 inline-block text-accent hover:text-accent transition">
+                Explore →
+              </a>
+            </div>
+
+            <div class="group rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 transition hover:border-accent/60 hover:shadow-card">
+              <div class="mb-4 h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-2xl">
+                📱
+              </div>
+              <h3 class="text-xl font-bold text-white">App Development</h3>
+              <p class="mt-3 text-white/70">iOS, Android, Flutter, React Native, Enterprise applications</p>
+              <a href="#services" class="mt-4 inline-block text-accent hover:text-accent transition">
+                Explore →
+              </a>
+            </div>
+
+            <div class="group rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 transition hover:border-accent/60 hover:shadow-card">
+              <div class="mb-4 h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-2xl">
+                ✈️
+              </div>
+              <h3 class="text-xl font-bold text-white">Travel Services</h3>
+              <p class="mt-3 text-white/70">End-to-end travel solutions for corporate aur leisure trips</p>
+              <a href="#services" class="mt-4 inline-block text-accent hover:text-accent transition">
+                Explore →
+              </a>
+            </div>
+
+            <div class="group rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 transition hover:border-accent/60 hover:shadow-card">
+              <div class="mb-4 h-12 w-12 rounded-lg bg-accent/20 flex items-center justify-center text-2xl">
+                💡
+              </div>
+              <h3 class="text-xl font-bold text-white">IT Consulting</h3>
+              <p class="mt-3 text-white/70">Strategic technology consulting aur business solutions</p>
+              <a href="#services" class="mt-4 inline-block text-accent hover:text-accent transition">
+                Explore →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS SECTION -->
+      <section class="border-t border-white/10 bg-gradient-to-br from-accent/10 to-transparent py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="grid gap-8 md:grid-cols-4">
+            <div class="text-center">
+              <p class="text-5xl font-bold text-accent">300+</p>
+              <p class="mt-2 text-white/80">Projects Completed</p>
+            </div>
+            <div class="text-center">
+              <p class="text-5xl font-bold text-accent">200+</p>
+              <p class="mt-2 text-white/80">Happy Clients</p>
+            </div>
+            <div class="text-center">
+              <p class="text-5xl font-bold text-accent">50+</p>
+              <p class="mt-2 text-white/80">Team Members</p>
+            </div>
+            <div class="text-center">
+              <p class="text-5xl font-bold text-accent">7+</p>
+              <p class="mt-2 text-white/80">Years in Business</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS SECTION -->
+      <section class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Our Process</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              A Structured <span class="text-accent">5-Step Process</span>
+            </h2>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-5">
+            <div class="relative flex flex-col items-center text-center">
+              <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20 text-2xl font-bold text-accent">
+                1
+              </div>
+              <h3 class="font-bold text-white">Discovery</h3>
+              <p class="mt-2 text-sm text-white/70">Understand your business goals aur challenges</p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center">
+              <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20 text-2xl font-bold text-accent">
+                2
+              </div>
+              <h3 class="font-bold text-white">Strategy</h3>
+              <p class="mt-2 text-sm text-white/70">Develop comprehensive strategy aur roadmap</p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center">
+              <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20 text-2xl font-bold text-accent">
+                3
+              </div>
+              <h3 class="font-bold text-white">Design</h3>
+              <p class="mt-2 text-sm text-white/70">Create beautiful aur user-friendly designs</p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center">
+              <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20 text-2xl font-bold text-accent">
+                4
+              </div>
+              <h3 class="font-bold text-white">Development</h3>
+              <p class="mt-2 text-sm text-white/70">Build with cutting-edge technology stack</p>
+            </div>
+
+            <div class="relative flex flex-col items-center text-center">
+              <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-accent/20 text-2xl font-bold text-accent">
+                5
+              </div>
+              <h3 class="font-bold text-white">Support</h3>
+              <p class="mt-2 text-sm text-white/70">Ongoing maintenance aur 24/7 support</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SECTION -->
+      <section class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Client Testimonials</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              What Our <span class="text-accent">Clients Say</span>
+            </h2>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <div class="mb-4 flex gap-1">
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+              </div>
+              <p class="text-white/80">
+                "Garuda Technologies ney hamari website ko completely transform kar diya. Results dekh kar bahut khush hain!"
+              </p>
+              <p class="mt-4 font-semibold text-white">- Raj Kumar</p>
+              <p class="text-sm text-white/60">E-commerce Business Owner</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <div class="mb-4 flex gap-1">
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+              </div>
+              <p class="text-white/80">
+                "Team bohot professional hai aur communication bahut acha tha. Project on-time deliver hua."
+              </p>
+              <p class="mt-4 font-semibold text-white">- Priya Singh</p>
+              <p class="text-sm text-white/60">Tech Startup Founder</p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <div class="mb-4 flex gap-1">
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+                <span class="text-accent">★</span>
+              </div>
+              <p class="text-white/80">
+                "Outstanding digital marketing results! Hamara traffic 300% increase ho gaya sirf 3 months mein."
+              </p>
+              <p class="mt-4 font-semibold text-white">- Amit Patel</p>
+              <p class="text-sm text-white/60">SaaS Company CEO</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES SECTION -->
+      <section class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Success Stories</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              Real Results for Real <span class="text-accent">Businesses</span>
+            </h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-white/70">
+              Dekho kaise hum different industries mein businesses ko transform kar rahe hain
+            </p>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 hover:border-accent/60 transition">
+              <div class="mb-4 inline-flex rounded-full bg-accent/20 px-4 py-2 text-sm font-semibold text-accent">
+                E-commerce
+              </div>
+              <h3 class="text-2xl font-bold text-white">Online Store Growth</h3>
+              <p class="mt-4 text-white/80 leading-relaxed">
+                Ek e-commerce business ko hum ne SEO aur performance marketing se 300% sales growth dilaya. Unka monthly revenue 50 lakh se badhkar 2 crore + ho gaya sirf 6 months mein.
+              </p>
+              <div class="mt-6 space-y-3 border-t border-white/10 pt-6">
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Challenge:</span> Low organic traffic aur high CAC</p>
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Solution:</span> SEO + Google Ads optimization</p>
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Result:</span> 300% sales increase, 50% CAC reduction</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 hover:border-accent/60 transition">
+              <div class="mb-4 inline-flex rounded-full bg-accent/20 px-4 py-2 text-sm font-semibold text-accent">
+                SaaS Startup
+              </div>
+              <h3 class="text-2xl font-bold text-white">User Acquisition</h3>
+              <p class="mt-4 text-white/80 leading-relaxed">
+                Ek SaaS company ko hum ne custom web app develop kiya aur full digital marketing strategy implement ki. Unke monthly active users 100 se badhkar 10,000+ ho gaye.
+              </p>
+              <div class="mt-6 space-y-3 border-t border-white/10 pt-6">
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Challenge:</span> Market entry aur customer acquisition</p>
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Solution:</span> Custom web app + B2B marketing</p>
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Result:</span> 10,000+ users in 12 months</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-gradient-to-br from-white/5 to-transparent p-8 hover:border-accent/60 transition">
+              <div class="mb-4 inline-flex rounded-full bg-accent/20 px-4 py-2 text-sm font-semibold text-accent">
+                Healthcare
+              </div>
+              <h3 class="text-2xl font-bold text-white">Digital Transformation</h3>
+              <p class="mt-4 text-white/80 leading-relaxed">
+                Ek medical practice network ke liye hum ne complete digital presence build kiya. Unhe healthcare SEO se 500+ new patients mille aur online appointments 80% badh gayi.
+              </p>
+              <div class="mt-6 space-y-3 border-t border-white/10 pt-6">
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Challenge:</span> Limited online visibility</p>
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Solution:</span> Healthcare SEO + website redesign</p>
+                <p class="text-sm text-white/70"><span class="text-accent font-semibold">Result:</span> 500+ new patients, 80% more appointments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US DETAILED SECTION -->
+      <section class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Our Advantages</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              Why <span class="text-accent">Garuda Technologies</span>?
+            </h2>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 class="text-2xl font-bold text-white mb-4">🚀 Proven Expertise</h3>
+              <p class="text-white/80 leading-relaxed">
+                Hum ne 300+ projects successfully deliver kiye hain different industries mein. Hamara track record ko dekho aur apna confidence badhao. Har project mein hum quality aur timely delivery ensure karte hain.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 class="text-2xl font-bold text-white mb-4">💼 Dedicated Team</h3>
+              <p class="text-white/80 leading-relaxed">
+                Hamara 50+ member team har client ko dedicated support provide karta hai. Aapka project ke liye alag team assign hota hai jo start se end tak responsibility lete hain.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 class="text-2xl font-bold text-white mb-4">⚡ Latest Technology</h3>
+              <p class="text-white/80 leading-relaxed">
+                Hum har time latest technology aur best practices use karte hain. React, Node.js, Flutter, AWS - sab modern stack se hum build karte hain taaki aapko best performance mile.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 class="text-2xl font-bold text-white mb-4">🎯 Results-Focused</h3>
+              <p class="text-white/80 leading-relaxed">
+                Hum sirf beautiful designs nahi banate, balki measurable results deliver karte hain. ROI, traffic, conversions - sab metrics track karte hain aur constantly improve karte hain.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 class="text-2xl font-bold text-white mb-4">🔒 Security & Quality</h3>
+              <p class="text-white/80 leading-relaxed">
+                Data security aur code quality hamara top priority hai. Hum SSL encryption, secure coding practices, aur regular security audits follow karte hain.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+              <h3 class="text-2xl font-bold text-white mb-4">🕐 24/7 Support</h3>
+              <p class="text-white/80 leading-relaxed">
+                Launch ke baad bhi hum aapke saath hote hain. 24/7 support, regular maintenance, aur updates - sab kuch included hai. Koi bhi issue ho to immediately handle karte hain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DETAILED SERVICES SECTION -->
+      <section class="border-t border-white/10 bg-gradient-to-br from-accent/5 to-transparent py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Detailed Services</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              Deep Dive Into Our <span class="text-accent">Offerings</span>
+            </h2>
+          </div>
+
+          <div class="space-y-12">
+            <div class="grid gap-8 lg:grid-cols-2">
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-4">🔍 SEO Services</h3>
+                <p class="text-white/80 leading-relaxed mb-4">
+                  Hum aapke website ko Google ke first page par lane ke liye complete SEO strategy implement karte hain. Local SEO se lekar enterprise-level SEO tak, sab services provide karte hain.
+                </p>
+                <ul class="space-y-2">
+                  <li class="text-white/70">✓ Keyword research aur analysis</li>
+                  <li class="text-white/70">✓ On-page aur off-page optimization</li>
+                  <li class="text-white/70">✓ Technical SEO aur site speed optimization</li>
+                  <li class="text-white/70">✓ Content strategy aur link building</li>
+                  <li class="text-white/70">✓ Monthly reports aur analytics</li>
+                </ul>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+                <p class="text-white/70 text-sm mb-4"><span class="text-accent font-bold">Avg Results:</span></p>
+                <div class="space-y-3">
+                  <div>
+                    <p class="text-white font-semibold">300% Average Ranking Improvement</p>
+                    <p class="text-white/60 text-sm">Competitors ko piche chhod ke top rankings</p>
+                  </div>
+                  <div>
+                    <p class="text-white font-semibold">200% Organic Traffic Increase</p>
+                    <p class="text-white/60 text-sm">6-12 months mein measurable growth</p>
+                  </div>
+                  <div>
+                    <p class="text-white font-semibold">45% Cost Per Lead Reduction</p>
+                    <p class="text-white/60 text-sm">Paid ads ko reduce karke organic traffic badhao</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-8 lg:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+                <p class="text-white/70 text-sm mb-4"><span class="text-accent font-bold">What We Deliver:</span></p>
+                <div class="space-y-3">
+                  <div>
+                    <p class="text-white font-semibold">Custom Web Applications</p>
+                    <p class="text-white/60 text-sm">React, Next.js, Node.js se modern web apps</p>
+                  </div>
+                  <div>
+                    <p class="text-white font-semibold">Mobile-First Design</p>
+                    <p class="text-white/60 text-sm">Perfect on all devices aur browsers</p>
+                  </div>
+                  <div>
+                    <p class="text-white font-semibold">E-commerce Solutions</p>
+                    <p class="text-white/60 text-sm">Shopify, WooCommerce, custom platforms</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl font-bold text-white mb-4">💻 Web Development</h3>
+                <p class="text-white/80 leading-relaxed mb-4">
+                  Hum modern, responsive aur high-performance websites develop karte hain jo aapke business ke goals ko achieve karte hain.
+                </p>
+                <ul class="space-y-2">
+                  <li class="text-white/70">✓ Custom website development</li>
+                  <li class="text-white/70">✓ WordPress aur CMS solutions</li>
+                  <li class="text-white/70">✓ Shopify store setup aur optimization</li>
+                  <li class="text-white/70">✓ Website redesign aur migration</li>
+                  <li class="text-white/70">✓ Payment gateway integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-4xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Questions?</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              Frequently Asked <span class="text-accent">Questions</span>
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-semibold text-white">
+                <span>Project kitne din mein complete ho jata hai?</span>
+                <span class="text-accent transition group-open:rotate-180">▼</span>
+              </summary>
+              <p class="text-white/70 mt-4">
+                Ye project ki complexity par depend karta hai. Simple website 2-4 weeks mein, medium projects 1-3 months mein, aur complex applications 3-6+ months mein complete hote hain. Hum initial consultation mein exact timeline dete hain.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-semibold text-white">
+                <span>SEO results kitne din baad nazar aate hain?</span>
+                <span class="text-accent transition group-open:rotate-180">▼</span>
+              </summary>
+              <p class="text-white/70 mt-4">
+                SEO ek long-term strategy hai. Usually 3-6 months mein positive results nazar aane lagते hain, lekin 6-12 months mein significant improvement dekha ja sakta hai. Har industry aur competition level different hota hai.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-semibold text-white">
+                <span>Aap ki pricing model kya hai?</span>
+                <span class="text-accent transition group-open:rotate-180">▼</span>
+              </summary>
+              <p class="text-white/70 mt-4">
+                Hum flexible pricing models offer karte hain - project-based, monthly retainer, aur time & material. Project requirements ko dekh kar hum customized quote dete hain. Budget ke according hum solutions tailor karte hain.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-semibold text-white">
+                <span>Kya aap post-launch support dete ho?</span>
+                <span class="text-accent transition group-open:rotate-180">▼</span>
+              </summary>
+              <p class="text-white/70 mt-4">
+                Bilkul! Hum 24/7 support, regular maintenance, security updates, aur technical assistance provide karte hain. Monthly, quarterly ya yearly packages available hain depending on aapki needs.
+              </p>
+            </details>
+
+            <details class="group rounded-2xl border border-white/10 bg-white/5 p-6 cursor-pointer">
+              <summary class="flex items-center justify-between font-semibold text-white">
+                <span>Kya aap NDA aur confidentiality agreement sign karte ho?</span>
+                <span class="text-accent transition group-open:rotate-180">▼</span>
+              </summary>
+              <p class="text-white/70 mt-4">
+                Haan, hum har client ke saath NDA aur confidentiality agreement sign karte hain. Aapki business information aur code 100% secure aur confidential rahti hai. Ye hamari standard practice hai.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="border-t border-white/10 bg-gradient-to-r from-accent/20 to-accent/10 py-20">
+        <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
+          <h2 class="text-4xl font-bold text-white sm:text-5xl">
+            Ready to Transform Your <span class="text-accent">Business</span>?
+          </h2>
+          <p class="mt-6 text-lg text-white/80">
+            Aaj hi contact karein aur apne business ke liye best IT & digital solutions paaein.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="#contact" class="rounded-lg bg-accent px-8 py-4 font-semibold text-white shadow-glow transition hover:shadow-2xl hover:scale-105">
+              Start Your Project
+            </a>
+            <a href="tel:+919876543210" class="rounded-lg border-2 border-accent/60 px-8 py-4 font-semibold text-white transition hover:border-accent hover:bg-accent/10">
+              Call Us Now
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="border-t border-white/10 py-20 lg:py-28">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mb-16 text-center">
+            <p class="mb-4 text-accent font-semibold">Get In Touch</p>
+            <h2 class="text-4xl font-bold text-white sm:text-5xl">
+              Let's <span class="text-accent">Connect</span>
+            </h2>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
+              <div class="mb-4 flex justify-center text-4xl">📧</div>
+              <h3 class="font-bold text-white">Email</h3>
+              <a href="mailto:hello@garuviaflytech.com" class="mt-2 text-accent hover:text-white transition">
+                hello@garuviaflytech.com
+              </a>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
+              <div class="mb-4 flex justify-center text-4xl">📞</div>
+              <h3 class="font-bold text-white">Phone</h3>
+              <a href="tel:+919876543210" class="mt-2 text-accent hover:text-white transition">
+                +91 98765 43210
+              </a>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
+              <div class="mb-4 flex justify-center text-4xl">📍</div>
+              <h3 class="font-bold text-white">Address</h3>
+              <p class="mt-2 text-white/70">
+                New Delhi, India
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 bg-black/80 py-16">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid gap-8 md:grid-cols-4">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <img src="css/logo.svg" alt="GFT Logo" class="h-12 w-12">
+              <h3 class="text-2xl font-bold text-white">
+                Garuvia<span class="text-accent">Flytech</span>
+              </h3>
+            </div>
+            <p class="text-white/70">Empowering businesses with smart IT & digital solutions for growth.</p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-white">Services</h4>
+            <ul class="mt-4 space-y-2">
+              <li><a href="#services" class="text-white/70 hover:text-accent">SEO Services</a></li>
+              <li><a href="#services" class="text-white/70 hover:text-accent">Digital Marketing</a></li>
+              <li><a href="#services" class="text-white/70 hover:text-accent">Web Development</a></li>
+              <li><a href="#services" class="text-white/70 hover:text-accent">App Development</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-white">Company</h4>
+            <ul class="mt-4 space-y-2">
+              <li><a href="#about" class="text-white/70 hover:text-accent">About Us</a></li>
+              <li><a href="#services" class="text-white/70 hover:text-accent">Blog</a></li>
+              <li><a href="#contact" class="text-white/70 hover:text-accent">Contact</a></li>
+              <li><a href="#" class="text-white/70 hover:text-accent">Careers</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-white">Follow Us</h4>
+            <ul class="mt-4 space-y-2">
+              <li><a href="#" class="text-white/70 hover:text-accent">Facebook</a></li>
+              <li><a href="#" class="text-white/70 hover:text-accent">LinkedIn</a></li>
+              <li><a href="#" class="text-white/70 hover:text-accent">Twitter</a></li>
+              <li><a href="#" class="text-white/70 hover:text-accent">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 border-t border-white/10 pt-8 text-center text-white/60">
+          <p>© <span id="year"></span> Garuvia Flytech. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
